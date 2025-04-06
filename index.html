@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Assemblage 01</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    <!-- <canvas id="spectrogram"></canvas> -->
+    <!-- <audio class="js-audio" src="music.mp3"></audio> -->
+    ​​<script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"></script>
+
+    <media-controller audio   style="
+    --media-background-color: transparent;
+    --media-control-background: transparent;
+    --media-control-hover-background: transparent;
+  " class="w-full">
+      <audio
+        slot="media"
+        src="music.mp3"
+      ></audio>
+      <media-control-bar  class="h-10 w-full bg-black flex justify-center align-center">
+        <!-- <media-seek-backward-button></media-seek-backward-button> -->
+        <media-play-button class=""></media-play-button>
+        <!-- <media-seek-forward-button></media-seek-forward-button> -->
+        <!-- <media-time-display></media-time-display> -->
+        <!-- <media-time-range       class="block h-2 min-h-0 p-0 m-2 bg-slate-50"
+        style="
+          --media-range-track-background: transparent;
+          --media-time-range-buffered-color: rgb(0 0 0 / 0.02);
+          --media-range-bar-color: rgb(25, 25, 25);
+          --media-range-track-height: 0.5rem;
+          --media-range-thumb-background: rgb(251 251 251);
+          --media-range-thumb-width: 0.25rem;
+          --media-range-thumb-height: 1rem;
+          --media-preview-time-text-shadow: transparent;
+        "></media-time-range> -->
+        <!-- <media-duration-display></media-duration-display> -->
+        <!-- <media-mute-button class="ml-auto"></media-mute-button> -->
+        <!-- <media-volume-range class="ml-auto"></media-volume-range> -->
+      </media-control-bar>
+    </media-controller>
+    
+    <img src="./image1.png" alt="" class="object-contain">
+    <img src="./image2.png" alt="" class="object-contain">
+
+</body>
+</html>
